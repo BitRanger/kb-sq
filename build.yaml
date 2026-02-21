@@ -6,7 +6,7 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 board: [ "nice_nano" ]
-shield: [ "kb_sq_left", "settings_reset" ]
+shield: [ "kb_sq_left", "kb_sq_right", "settings_reset" ]
 #shield: [ "kb_sq_left", "kb_sq_right" ]
 # include:
 #   - board: bdn9_rev2
