@@ -5,6 +5,7 @@
 #include "kb_sq.dtsi"
 
 &kscan {
+    diode-direction = "col2row";
     // Replace these comments with the GPIO pins in the matrix for the left side.
     // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
     col-gpios
