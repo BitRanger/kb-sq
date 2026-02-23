@@ -14,13 +14,13 @@ config ZMK_SPLIT
     default y
 
 # 12KRO (Default is 6KRO)
-config CONFIG_ZMK_HID_REPORT_TYPE_HKRO
-    default y
-config CONFIG_ZMK_HID_KEYBOARD_REPORT_SIZE
-    default 12
+# config CONFIG_ZMK_HID_REPORT_TYPE_HKRO
+#     default y
+# config CONFIG_ZMK_HID_KEYBOARD_REPORT_SIZE
+#     default 12
 
 # Full NKRO loses support for some BIOS/UEFI versions
-# config CONFIG_ZMK_HID_REPORT_TYPE_NKRO
-#     default y
+config CONFIG_ZMK_HID_REPORT_TYPE_NKRO
+    default y
 
 endif # SHIELD_KB_SQ_LEFT || SHIELD_KB_SQ_RIGHT
