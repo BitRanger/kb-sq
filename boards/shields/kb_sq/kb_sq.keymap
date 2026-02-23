@@ -49,6 +49,7 @@
                 &none       &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp LT      &kp LBKT    &kp RBKT    &kp GT      &kp SEMI    &kp AMPS
                 &none       &none       &none       &kp PSCRN   &kp K_REDO  &kp K_UNDO  &kp UNDER   &kp LBRC    &kp RBRC    &kp COMMA   &kp DQT     &kp PIPE
                 &kp K_CUT   &kp K_PASTE &kp K_COPY  &none       &trans      &none       &none       &trans      &kp STAR    &kp FSLH    &kp BSLH    &kp SQT
+            >;
         };
         settings_layer {
             display-name = "Settings";
