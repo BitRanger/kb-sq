@@ -20,7 +20,7 @@ config ZMK_SPLIT
 #     default 12
 
 # Full NKRO loses support for some BIOS/UEFI versions
-config ZMK_HID_REPORT_TYPE_NKRO
-    default y
+# config ZMK_HID_REPORT_TYPE_NKRO
+#     default y
 
 endif # SHIELD_KB_SQ_LEFT || SHIELD_KB_SQ_RIGHT
