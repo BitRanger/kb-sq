@@ -15,9 +15,9 @@
             display-name = "Base";
             bindings = <
                 &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp ESC
-                &kp TAB     &kp B       &kp L       &kp D       &kp C       &kp V       &kp J       &kp Y       &kp O       &kp U       &kp P       &kp BSPC
-                &kp LSHIFT  &kp N       &kp R       &kp T       &kp S       &kp G       &kp P       &kp H       &kp K       &kp A       &kp I       &kp RSHIFT
-                &kp LCTRL   &kp X       &kp Q       &kp M       &kp W       &kp Z       &kp K       &kp F       &kp SQT     &kp SEMI    &kp DOT     &kp RCTRL
+                &kp TAB     &kp B       &kp L       &kp D       &kp C       &kp V       &kp J       &kp F       &kp O       &kp U       &kp COMMA   &kp BSPC
+                &kp LSHIFT  &kp N       &kp R       &kp T       &kp S       &kp G       &kp Y       &kp H       &kp A       &kp E       &kp I       &kp RSHIFT
+                &kp LCTRL   &kp X       &kp Q       &kp M       &kp W       &kp Z       &kp K       &kp P       &kp SQT     &kp SEMI    &kp DOT     &kp RCTRL
                 &mo 4       &kp LALT    &kp LGUI    &kp SPACE   &mo 3       &kp ESC     &kp ESC     &mo 2       &kp RETURN  &kp RGUI    &kp RALT    &mo 4
             >;
         };
@@ -54,7 +54,7 @@
         settings_layer {
             display-name = "Settings";
             bindings = <
-                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none   &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none
+                &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none   &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3   &bt BT_DISC 4    &none
                 &studio_unlock  &out OUT_USB    &out OUT_BLE    &to 0           &to 1           &none   &none           &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none           &none   &none           &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none           &none   &none           &none           &none           &none           &none           &none
