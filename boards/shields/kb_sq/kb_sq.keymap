@@ -18,8 +18,9 @@
                 &kp TAB     &kp B       &kp L       &kp D       &kp C       &kp V       &kp J       &kp F       &kp O       &kp U       &kp COMMA   &kp BSPC
                 &kp LSHIFT  &kp N       &kp R       &kp T       &kp S       &kp G       &kp Y       &kp H       &kp A       &kp E       &kp I       &kp RSHIFT
                 &kp LCTRL   &kp X       &kp Q       &kp M       &kp W       &kp Z       &kp K       &kp P       &kp SQT     &kp SEMI    &kp DOT     &kp RCTRL
-                &mo 4       &kp LALT    &kp LGUI    &kp SPACE   &mo 3       &kp ESC     &kp ESC     &mo 2       &kp RETURN  &kp RGUI    &kp RALT    &mo 4
+                &mo 2       &kp LALT    &mo 3       &kp LGUI    &kp SPACE   &kp C_MUTE  &kp C_PP    &kp RETURN  &kp RGUI    &mo 2       &kp RALT    &mo 4
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN >;
         };
         qwerty_layer {
             display-name = "Qwerty";
@@ -28,8 +29,9 @@
                 &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp BSPC
                 &kp LSHIFT  &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp RSHIFT
                 &kp LCTRL   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp SQT     &kp RCTRL
-                &mo 4       &kp LALT    &kp LGUI    &kp SPACE   &mo 3       &kp ESC     &kp ESC     &mo 2       &kp RETURN  &kp RGUI    &kp RALT    &mo 4
+                &mo 2       &kp LALT    &mo 3       &kp LGUI    &kp SPACE   &kp C_MUTE  &kp C_PP    &kp RETURN  &kp RGUI    &mo 2       &kp RALT    &mo 4
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN >;       
         };
         nav_layer {
             display-name = "Navigation";
@@ -38,8 +40,9 @@
                 &kp CAPS    &kp END     &kp PG_DN   &kp UP      &kp PG_UP   &kp HOME    &kp KP_DOT      &kp KP_N7   &kp KP_N8   &kp KP_N9       &kp KP_MULTIPLY &kp KP_DIVIDE
                 &kp SLCK    &kp DEL     &kp LEFT    &kp DOWN    &kp RIGHT   &kp INS     &kp KP_COMMA    &kp KP_N4   &kp KP_N5   &kp KP_N6       &kp KP_PLUS     &kp KP_MINUS
                 &trans      &none       &none       &kp PSCRN   &kp K_REDO  &kp K_UNDO  &kp KP_EQUAL    &kp KP_N1   &kp KP_N2   &kp KP_N3       &kp KP_LPAR     &kp KP_RPAR
-                &trans      &trans      &trans      &trans      &trans      &none       &none           &trans      &kp KP_NUM  &kp KP_CLEAR    &kp KP_N0       &kp KP_ENTER
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans          &trans      &kp KP_NUM  &kp KP_CLEAR    &kp KP_N0       &kp KP_ENTER
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN >;
         };
         symbols_layer {
             display-name = "Symbols";
@@ -48,8 +51,10 @@
                 &none       &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp EQUAL   &kp LPAR    &kp RPAR    &kp DOT     &kp PERCENT &kp GRAVE
                 &none       &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp LT      &kp LBKT    &kp RBKT    &kp GT      &kp SEMI    &kp AMPS
                 &trans      &kp K_PASTE &kp K_COPY  &kp PSCRN   &kp K_REDO  &kp K_UNDO  &kp UNDER   &kp LBRC    &kp RBRC    &kp COMMA   &kp DQT     &kp PIPE
-                &trans      &trans      &trans      &trans      &trans      &none       &none       &trans      &kp STAR    &kp FSLH    &kp BSLH    &kp SQT
+                &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp STAR    &kp FSLH    &kp BSLH    &kp SQT
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN >;
+
         };
         settings_layer {
             display-name = "Settings";
@@ -58,8 +63,9 @@
                 &studio_unlock  &out OUT_USB    &out OUT_BLE    &to 0           &to 1           &none   &kp K_PWR       &kp K_SLEEP     &kp K_LOCK      &none           &none           &none
                 &none           &none           &none           &none           &none           &none   &none           &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none           &none   &none           &none           &none           &none           &none           &none
-                &trans          &none           &none           &none           &none           &none   &none           &none           &none           &bt BT_CLR      &bt BT_CLR_ALL  &trans
+                &none           &none           &none           &none           &none           &none   &none           &none           &none           &bt BT_CLR      &bt BT_CLR_ALL  &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_BRI_UP C_BRI_DN >;
         };
 
         extra_layer_1 {

@@ -23,5 +23,9 @@
         , <&gpio1 00 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
-
 };
+
+&left_encoder {
+    status = "okay";
+};
+
