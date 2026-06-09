@@ -18,7 +18,7 @@
                 &kp TAB     &kp B       &kp L       &kp D       &kp C       &kp V       &kp J       &kp F       &kp O       &kp U       &kp COMMA   &kp BSPC
                 &kp LSHIFT  &kp N       &kp R       &kp T       &kp S       &kp G       &kp Y       &kp H       &kp A       &kp E       &kp I       &kp RSHIFT
                 &kp LCTRL   &kp X       &kp Q       &kp M       &kp W       &kp Z       &kp K       &kp P       &kp SQT     &kp SEMI    &kp DOT     &kp RCTRL
-                &mo 2       &kp LALT    &mo 3       &kp LGUI    &kp SPACE   &kp C_MUTE  &kp C_PP    &kp RETURN  &kp RGUI    &mo 2       &kp RALT    &mo 4
+                &mo 2       &kp LALT    &kp LGUI       &mo 3    &kp SPACE   &kp C_MUTE  &kp C_PP    &kp RETURN  &mo 2    &kp RGUI       &kp RALT    &mo 4
             >;
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRI_DN C_BRI_UP >;
         };
@@ -47,8 +47,8 @@
         symbols_layer {
             display-name = "Symbols";
             bindings = <
-                &none       &none       &none       &none       &none       &none       &kp DOLLAR  &kp QMARK   &kp PLUS    &kp MINUS   &kp COLON   &kp TILDE
-                &none       &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp EQUAL   &kp LPAR    &kp RPAR    &kp DOT     &kp PERCENT &kp GRAVE
+                &none       &none       &none       &none       &none       &none       &kp DOLLAR  &kp QMARK   &kp PLUS    &kp EQUAL   &kp COLON   &kp TILDE
+                &none       &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS   &kp LPAR    &kp RPAR    &kp DOT     &kp PERCENT &kp GRAVE
                 &none       &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp LT      &kp LBKT    &kp RBKT    &kp GT      &kp SEMI    &kp AMPS
                 &trans      &kp K_PASTE &kp K_COPY  &kp PSCRN   &kp K_REDO  &kp K_UNDO  &kp UNDER   &kp LBRC    &kp RBRC    &kp COMMA   &kp DQT     &kp PIPE
                 &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &kp STAR    &kp FSLH    &kp BSLH    &kp SQT
@@ -60,10 +60,10 @@
             display-name = "Settings";
             bindings = <
                 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none   &bt BT_DISC 0   &bt BT_DISC 1   &bt BT_DISC 2   &bt BT_DISC 3   &bt BT_DISC 4   &none
-                &studio_unlock  &out OUT_USB    &out OUT_BLE    &to 0           &to 1           &none   &kp K_PWR       &kp K_SLEEP     &kp K_LOCK      &none           &none           &none
+                &studio_unlock  &out OUT_USB    &out OUT_BLE    &to 0           &to 1           &none   &kp K_PWR       &kp K_SLEEP     &kp K_LOCK      &bt BT_CLR           &bt BT_CLR_ALL           &none
                 &none           &none           &none           &none           &none           &none   &none           &none           &none           &none           &none           &none
                 &none           &none           &none           &none           &none           &none   &none           &none           &none           &none           &none           &none
-                &none           &none           &none           &none           &none           &none   &none           &none           &none           &bt BT_CLR      &bt BT_CLR_ALL  &trans
+                &none           &none           &none           &none           &none           &none   &none           &none           &none           &none      &none  &trans
             >;
             sensor-bindings = < &inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRI_DN C_BRI_UP >;
         };
